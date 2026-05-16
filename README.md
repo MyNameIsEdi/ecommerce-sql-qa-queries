@@ -1,3 +1,4 @@
+
 # 🛒 E-commerce Database & QA Queries
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
@@ -46,3 +47,34 @@ erDiagram
         int quantity
         decimal unit_price
     }
+
+```
+
+---
+
+## 🚀 Features
+
+* **Robust Schema:** Properly defined Primary Keys (PK) and Foreign Keys (FK) with cascading rules.
+* **QA-Focused Queries:** Includes queries designed to catch data anomalies (e.g., mismatched order totals, orphaned records, inventory discrepancies).
+* **Business Intelligence:** Analytical queries for revenue tracking, top users, and inventory alerts.
+
+---
+
+## 📁 Repository Structure
+
+* `schema.sql` - DDL script to create tables and relationships.
+* `seed.sql` - DML script with dummy data to populate the database for testing.
+* `qa_queries.sql` - A collection of complex SQL queries for data validation and reporting.
+
+---
+
+## 💻 How to Run Locally
+
+You can run these scripts on any PostgreSQL or MySQL instance.
+
+1. Create a new database: `CREATE DATABASE ecommerce_qa;`
+2. Run `schema.sql` to build the tables.
+3. Run `seed.sql` to populate the tables with mock data.
+4. Execute queries from `qa_queries.sql` to validate the data.
+
+```
